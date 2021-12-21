@@ -175,7 +175,7 @@ function loadProjectFile() {
                       require('shelljs').rm('-rf', frameworks_file);
                       return;
                   }
-                  fs.writeFileSync(frameworks_file, JSON.stringify(this.frameworks, null, 4));
+                  fs.writeFileSync(frameworks_file, JSON.stringify(frameworks, null, 4));
               }
           };
       }
